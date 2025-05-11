@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#fafbff] text-gray-800;
+  }
+}
+
+@layer components {
+  .matte-card {
+    @apply bg-white/80 backdrop-blur-sm border border-[#234781]/10 shadow-sm hover:shadow-md transition-all duration-300;
+  }
+
+  .matte-container {
+    @apply bg-[#234781]/5 backdrop-blur-sm;
+  }
+
+  .matte-input {
+    @apply bg-white/70 backdrop-blur-sm border border-[#234781]/20 focus:border-[#234781]/40 transition-all duration-300;
+  }
+
+  .matte-button {
+    @apply bg-[#234781] text-white hover:bg-[#2c5aa0] transition-all duration-300;
+  }
+
+  .glass-panel {
+    @apply bg-[#234781]/10 backdrop-blur-md border border-white/20;
+  }
+}
+
+/* Your other styles below */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Custom styles */
+.account-page {
+  padding: 20px;
+}
+
+.tabs {
+  margin-bottom: 20px;
+}
+
+.tab-content {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
